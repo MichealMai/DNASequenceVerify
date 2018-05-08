@@ -24,7 +24,7 @@ public class DeleteExperimentService extends HttpServlet{
 		}
 		DataBaseUtils.update("delete from DS_Experiments where expid='"+expid+"';");
 		
-		//request.getRequestDispatcher("/servlet/ListExperimentService").forward(request, response);
+		request.getRequestDispatcher("/servlet/ListExperimentService").forward(request, response);
 	}
 	
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException 

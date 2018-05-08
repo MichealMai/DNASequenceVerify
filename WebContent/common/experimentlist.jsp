@@ -54,7 +54,7 @@
 				alert("The experiment is not exist");
 			},
 			success:function(data){
-				alert(data.algname);
+				//alert(data.algname);
 				window.location.href="{pageContext.request.contextPath}/servlet/ListExperimentService";
 			}
 	});
@@ -81,9 +81,7 @@
             		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             		<c:out value="Experiment name"/></li>
             		<c:forEach var="element" items="${expNameMap}">
-            		 		<li style="width:600px; height:5px; float:right;">
-            		 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            		 		<c:out value="${element.key}"/></li>
+            		 		<li style="width:600px; height:5px; float:right;"><c:out value="${element.key}"/></li>
                		<li style="height:100px">
                		<form action="${pageContext.request.contextPath}/servlet/ExcuteLibsvmExperimentService" method="post">
 						<input type="hidden" name="expid" value="${element.value}">

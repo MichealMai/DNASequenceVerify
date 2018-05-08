@@ -153,8 +153,13 @@ public class ExcuteLibsvmExperimentService extends HttpServlet{
 		context.add(userid);
 		
 		String sqlE=TableUtils.getInsertSQL(context,column,Files.class);
-		System.out.println(sqlE);
-		DataBaseUtils.update(sqlE);
+		
+		List<Map<String,Object>> rsfile=new ArrayList<Map<String,Object>>();
+		rsfile=DataBaseUtils.queryForList("Select * from DS_Files where userid='"+userid+"' and filename='"+filename.substring(0, filename.lastIndexOf(".csv"))+".combinedfeatures.csv"+"';");
+		if(rsfile.size()<=0) 
+		{
+			DataBaseUtils.update(sqlE);
+		}
 		
 		String link;
 		if(user.getIsAdmin().equals("yes"))

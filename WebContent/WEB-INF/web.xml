@@ -40,6 +40,12 @@
         <url-pattern>/servlet/Listinput</url-pattern>
   </servlet-mapping>
   
+  <!-- Default config -->
+ <welcome-file-list>
+		<welcome-file>Index.jsp</welcome-file>
+</welcome-file-list>
+  
+  
   <!--new servlet-->
   
   <servlet>
