@@ -1,5 +1,6 @@
 # SUNYAlbany
 ------------------------------------
+
 1. Open project from file system to import the project
 
 2.Create a new schemas with any name(Assume its name is DNA_SEQ)
