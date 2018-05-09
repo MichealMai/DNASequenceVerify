@@ -7,6 +7,6 @@
 
 #4.Add the command line "use DNA_SEQ;" and excuse
 
-#5.Setup the password of database in /config/jdbc.properites 
+#5.Setup the password and database name of database in /config/jdbc.properites 
 
 #6.Start the server and run index.jsp.  
