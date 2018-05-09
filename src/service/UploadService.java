@@ -32,9 +32,18 @@ public class UploadService extends HttpServlet{
 		User user=(User)session.getAttribute("userbean");
 		String userid=user.getUserid();
 		
-		String savePath=this.getServletContext().getRealPath("/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data").substring(0, this.getServletContext().getRealPath("/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data").lastIndexOf("/.metadata"))+"/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data";
-
-//		String savePath="/Users/maimac/Documents/JavaEEPRO/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data";
+		String savePath;
+		
+		if(System.getProperty("os.name").indexOf("Mac OS")>=0) 
+		{
+			savePath=this.getServletContext().getRealPath("/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data").substring(0, this.getServletContext().getRealPath("/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data").lastIndexOf("/.metadata"))+"/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data";
+		}
+		
+		else 
+		{
+			savePath=this.getServletContext().getRealPath("\\DNASequenceVerify\\WebContent\\silver-clusters-master\\data\\input_data").substring(0, this.getServletContext().getRealPath("\\DNASequenceVerify\\WebContent\\ilver-clusters-master\\data\\input_data").lastIndexOf("\\.metadata"))+"\\DNASequenceVerify\\WebContent\\silver-clusters-master\\data\\input_data";
+		}
+		
 		File pathA=new File(savePath);
 		if(!pathA.exists()) {
 			pathA.mkdir();

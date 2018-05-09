@@ -65,7 +65,6 @@ CREATE TABLE `DS_Experiments` (
 
 LOCK TABLES `DS_Experiments` WRITE;
 /*!40000 ALTER TABLE `DS_Experiments` DISABLE KEYS */;
-INSERT INTO `DS_Experiments` VALUES ('51eff554-6fc2-41de-948b-e18ffa5aef57','8061653e-aa94-42dd-bd43-de939bd6e1d8','dfgdf-4354-gdfgd-ejfhf','6f3146bb-af9e-4f6a-ade7-ae65f393e2d5','exp245'),('b00487da-0644-400f-8ae4-0b3f417773b5','8061653e-aa94-42dd-bd43-de939bd6e1d8','dfgdf-4354-gdfgd-ejfhf','93dc6b69-1c77-4695-b864-58546a0b6c06','exp123'),('c66122e6-a1b8-4530-9d1f-4b1f3909b43f','8061653e-aa94-42dd-bd43-de939bd6e1d8','6c33f360-7667-491d-9822-4bef6c8a5513','0cc133b9-7187-4add-a4d6-472c07d3c005','exp123');
 /*!40000 ALTER TABLE `DS_Experiments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -91,7 +90,6 @@ CREATE TABLE `DS_Files` (
 
 LOCK TABLES `DS_Files` WRITE;
 /*!40000 ALTER TABLE `DS_Files` DISABLE KEYS */;
-INSERT INTO `DS_Files` VALUES ('0cc133b9-7187-4add-a4d6-472c07d3c005','integrated-intensity.csv','/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data/integrated-intensity.csv','6c33f360-7667-491d-9822-4bef6c8a5513'),('0e94f58a-c833-4aab-969a-5d6442182574','integrated-intensity2.csv','/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data/integrated-intensity2.csv','6c33f360-7667-491d-9822-4bef6c8a5513'),('4ff917b2-bc14-4e89-b814-a2afd6911033','integrated-intensity.combinedfeatures.csv','/DNASequenceVerify/WebContent/silver-clusters-master/data/training_data/integrated-intensity.combinedfeatures.csv','6c33f360-7667-491d-9822-4bef6c8a5513'),('6f3146bb-af9e-4f6a-ade7-ae65f393e2d5','peak-intensity.csv','/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data/peak-intensity.csv','6c33f360-7667-491d-9822-4bef6c8a5513'),('93dc6b69-1c77-4695-b864-58546a0b6c06','integrated-intensity.csv','/Users/maimac/Documents/JavaEEPRO/DNASequenceVerify/WebContent/silver-clusters-master/data/input_data/integrated-intensity.csv','dfgdf-4354-gdfgd-ejfhf'),('ac0a38d7-2abb-4022-8357-720ee56ec325','peak-intensity.combinedfeatures.csv','/DNASequenceVerify/WebContent/silver-clusters-master/data/training_data/peak-intensity.combinedfeatures.csv','6c33f360-7667-491d-9822-4bef6c8a5513');
 /*!40000 ALTER TABLE `DS_Files` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,7 +118,6 @@ CREATE TABLE `DS_LibsvmParameterValue` (
 
 LOCK TABLES `DS_LibsvmParameterValue` WRITE;
 /*!40000 ALTER TABLE `DS_LibsvmParameterValue` DISABLE KEYS */;
-INSERT INTO `DS_LibsvmParameterValue` VALUES ('0','0','no','no','no','no','yes','c66122e6-a1b8-4530-9d1f-4b1f3909b43f'),('0','0','0','0','0','0','0','b00487da-0644-400f-8ae4-0b3f417773b5'),('2.37E+04','0','yes','no','no','yes','yes','51eff554-6fc2-41de-948b-e18ffa5aef57');
 /*!40000 ALTER TABLE `DS_LibsvmParameterValue` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,7 +177,7 @@ CREATE TABLE `DS_user` (
 
 LOCK TABLES `DS_user` WRITE;
 /*!40000 ALTER TABLE `DS_user` DISABLE KEYS */;
-INSERT INTO `DS_user` VALUES ('5f52ab8f-af9a-4228-8d02-58f9d3586bad','kitty','12345','Rqfgsd','Qgtqwre','Qetqtq',NULL,NULL,'2018-05-04 20:14:44','no'),('6c33f360-7667-491d-9822-4bef6c8a5513','admin','123','hello123@163.com','1400 hello street apt','51859523452','1','2018-04-19 18:36:07','2018-05-07 20:25:07','yes'),('dfgdf-4354-gdfgd-ejfhf','Simith','123456','hello@163.com','1400 hello street apt # 10','5185948353','1',NULL,'2018-05-07 22:49:34','no');
+INSERT INTO `DS_user` VALUES ('6c33f360-7667-491d-9822-4bef6c8a5513','admin','123','hello123@163.com','1400 hello street apt','51859523452','1','2018-04-19 18:36:07','2018-05-07 20:25:07','yes');
 /*!40000 ALTER TABLE `DS_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -193,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-08 19:53:00
+-- Dump completed on 2018-05-09 13:32:55
