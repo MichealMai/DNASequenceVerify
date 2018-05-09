@@ -43,7 +43,6 @@ public class LoginService extends HttpServlet{
 		{
 			if(!username.equals(temp.getUsername())||!password.equals(temp.getPassword())) 
 			{
-				System.out.println("Username or password is not match");
 				try {
 					obj.put("message", 1);
 				} catch (JSONException e) {

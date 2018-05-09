@@ -34,7 +34,6 @@ public class DownloadService extends HttpServlet{
 		String savepath=this.getServletContext().getRealPath(path).substring(0, this.getServletContext().getRealPath(path).lastIndexOf("/.metadata"))+path;
 		//File file=new File(path);
 		File file=new File(savepath);
-		System.out.println(savepath);
 		if(!file.exists()) {
 			request.setAttribute("message", "The file has been deleted");
 			//request.getRequestDispatcher("/servlet/Listinput").forward(request,response);

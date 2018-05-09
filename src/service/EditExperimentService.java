@@ -35,7 +35,6 @@ public class EditExperimentService extends HttpServlet{
 		{
 			
 			String sqlA="update DS_Experiments set expname='"+request.getParameter("expname")+"' where expid='"+exp.getExpid()+"';";
-			//System.out.println(sqlA);
 			DataBaseUtils.update(sqlA);
 		}
 		//check inputfile
