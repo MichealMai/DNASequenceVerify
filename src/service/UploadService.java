@@ -72,15 +72,11 @@ public class UploadService extends HttpServlet{
 				if(item.isFormField()) {
 					String name=item.getFieldName();
 					String value=item.getString("UTF-8");
-					System.out.println(name+"="+value);
 				}else {//如果fileitem中封装的是上传文件,得到上传的文件名称，
 					
 					//sql insert
 					
 					String filename=item.getName();
-
-					
-					System.out.println(filename);
 					if(filename==null||filename.trim().equals("")) {
 						continue;
 					}
@@ -91,7 +87,6 @@ public class UploadService extends HttpServlet{
 					//get extend name of upload file
 					String fileExtName=filename.substring(filename.lastIndexOf(".")+1);
 					//如果需要限制上传的文件类型，那么可以通过文件的扩展名来判断上传的文件类型是否合法
-					System.out.println("Extend name of upload file is :"+fileExtName);
 					//Get the inputstream
 					InputStream in=item.getInputStream();
 					//save file path
@@ -128,8 +123,7 @@ public class UploadService extends HttpServlet{
 					context.add(filepath);
 					context.add(userid);
 					
-					String sql=TableUtils.getInsertSQL(context,column,Files.class);//="Insert DS_files (fileid,filename,filepath,userid) Values('"+fileid+"','"+filename+"','"+filepath+"','"+userid+"');";
-					System.out.println(sql);
+					String sql=TableUtils.getInsertSQL(context,column,Files.class);
 					DataBaseUtils.update(sql);
 					
 					message="file upload successfully!";

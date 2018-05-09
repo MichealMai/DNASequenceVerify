@@ -57,7 +57,6 @@ public class CreateUserService extends HttpServlet{
 			context.add(isadmin);
 			
 			String sql=TableUtils.getInsertSQL(context, column, User.class);
-			System.out.println(sql);
 			DataBaseUtils.update(sql);
 			
 			request.getRequestDispatcher("/servlet/ListUserService").forward(request, response);
