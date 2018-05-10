@@ -1,14 +1,20 @@
 # DNA SEQUENCE VERIFY USER INTERFACE
 --------------------------------------------------------------------------------------
-Environment Requirements
-1.Browers(firefox, chorme, safari and so on)
-2.Mysql 5.6 or higher version
-3.MySql Workbench latest version
-4.Operation System: Mac OS
-5.IDE:Eclipse and so on
-6.Tomcat 7.0 or higher version
-7.JDK 1.8 or higher version
-8.Mysql connector-java version 5.1 or higher
+#1.Browers(firefox, chorme, safari and so on)
+
+#2.Mysql 5.6 or higher version
+
+#3.MySql Workbench latest version
+
+#4.Operation System: Mac OS
+
+#5.IDE:Eclipse and so on
+
+#6.Tomcat 7.0 or higher version
+
+#7.JDK 1.8 or higher version
+
+#8.Mysql connector-java version 5.1 or higher
 
 --------------------------------------------------------------------------------------
 #0.Rename the directory with name 'DNASequenceVerify' 
@@ -24,3 +30,6 @@ Environment Requirements
 #5.Setup the password and database name of database in /config/jdbc.properites 
 
 #6.Start the server and run WebContent/index.jsp.  
+--------------------------------------------------------------------------------------
+
+#If you have any question ,please contant me. My Email:zmai@albany.edu
