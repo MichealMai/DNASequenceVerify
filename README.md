@@ -1,4 +1,4 @@
-# SUNYAlbany
+# DNA SEQUENCE VERIFY USER INTERFACE
 #1. Open project from file system to import the project
 
 #2.Create a new schemas with name 'DNA_Sequence'(If not ,they will exception)
