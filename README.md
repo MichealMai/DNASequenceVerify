@@ -29,7 +29,8 @@
 
 #5.Setup the password and database name of database in /config/jdbc.properites 
 
-#6.Start the server and run WebContent/index.jsp.  
+#6.Start the server and run WebContent/index.jsp. 
+
 --------------------------------------------------------------------------------------
 
 #If you have any question ,please contant me. My Email:zmai@albany.edu
